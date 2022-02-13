@@ -41,6 +41,9 @@
     <Folder Include="FlaskQuickStart\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FlaskQuickStart\templates\deleteconfirm.html" />
+    <Content Include="FlaskQuickStart\templates\edit.html" />
+    <Content Include="FlaskQuickStart\templates\login.html" />
     <Content Include="FlaskQuickStart\templates\profile.html" />
     <Content Include="FlaskQuickStart\templates\register.html" />
     <Content Include="FlaskQuickStart\templates\users.html" />

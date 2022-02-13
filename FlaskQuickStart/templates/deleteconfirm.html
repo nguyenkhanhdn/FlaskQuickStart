@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+</head>
+<body>
+    <h2>Delete Account</h2>
+    <h4>{{msg}}</h4>
+    <hr />
+    <form action="/delete" method="POST">
+        <table>
+            <tr>
+                <td colspan="2"><h3>Edit profile</h3></td>
+            </tr>
+            <tr>
+                <td>User name</td>
+                <td><input name="username" type="text" value="{{row[0]}}" readonly/></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input name="email" type="email" value="{{row[1]}}" readonly /></td>
+            </tr>           
+            <tr>
+                <td colspan="2"><input type="submit" value="Delete" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

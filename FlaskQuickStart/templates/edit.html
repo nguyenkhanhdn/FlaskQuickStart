@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+</head>
+<body>
+    <h2>Edit profile information</h2>
+    <h4>{{msg}}</h4>
+    <hr/>
+    <form action="/edit" method="post">
+        <table>
+            <tr>
+                <td colspan="2"><h3>Edit profile</h3></td>
+            </tr>
+            <tr>
+                <td>User name</td>
+                <td><input name="username" type="text" value="{{row[0]}}" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input name="email" type="email" value="{{row[1]}}" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input name="password" type="password" value="{{row[2]}}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Update" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
